@@ -18,18 +18,45 @@ img { max-width: 100%; display: block; } /* pictures never overflow their box */
 /* STEP 1 · .container
    At most 1100px wide, centered on the page, 24px padding left and right.
    Every section uses it, so this one rule lines the whole page up. */
-
+.container {
+   max-width:1100px;
+   margin: 0 auto;
+   padding: 24px;
+   text-align: center;
+}
 
 /* STEP 2 · .site-header and .nav
    .site-header: a dark background colour.
    .nav: logo on the left, links on the right, centered up and down,
    16px padding top and bottom. */
+.site-header {
+   background-color: #111827;
+}
 
+.nav {
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 16px;
+   padding-bottom: 16px;
+}
 
 /* STEP 3 · .nav-links
    The links in a row, 24px apart. No bullets, no margin, no padding.
    The links inside (.nav-links a): white, no underline. */
+.nav-links {
+   display:flex;
+   gap: 24px;
+   flex-direction: row;
+   list-style:none;
+   margin: 0;
+   padding: 0;
+}
 
+.nav-links a {
+   color: white;
+   text-decoration: none;
+}
 
 /* STEP 4 · .logo
    Bigger than the links (1.6rem), bold, white, no underline. */
