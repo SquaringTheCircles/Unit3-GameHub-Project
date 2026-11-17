@@ -4,14 +4,24 @@
    The panel at the bottom right checks your page; targets.html shows the goal. */
 
 /* ===== Part A: given ===== */
-* { box-sizing: border-box; }          /* width includes padding and border */
-body {
-  margin: 0;
-  font-family: system-ui, "Segoe UI", Arial, sans-serif;
-  line-height: 1.6;
-  color: #1f2933;
+* {
+   box-sizing: border-box;
 }
-img { max-width: 100%; display: block; } /* pictures never overflow their box */
+
+/* width includes padding and border */
+body {
+   margin: 0;
+   font-family: system-ui, "Segoe UI", Arial, sans-serif;
+   line-height: 1.6;
+   color: #1f2933;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+/* pictures never overflow their box */
 
 /* ===== Part B: yours ===== */
 
@@ -19,7 +29,7 @@ img { max-width: 100%; display: block; } /* pictures never overflow their box */
    At most 1100px wide, centered on the page, 24px padding left and right.
    Every section uses it, so this one rule lines the whole page up. */
 .container {
-   max-width:1100px;
+   max-width: 1100px;
    margin: 0 auto;
    padding: 24px;
    text-align: center;
@@ -34,7 +44,7 @@ img { max-width: 100%; display: block; } /* pictures never overflow their box */
 }
 
 .nav {
-   display:flex;
+   display: flex;
    justify-content: space-between;
    align-items: center;
    padding-top: 16px;
@@ -45,10 +55,10 @@ img { max-width: 100%; display: block; } /* pictures never overflow their box */
    The links in a row, 24px apart. No bullets, no margin, no padding.
    The links inside (.nav-links a): white, no underline. */
 .nav-links {
-   display:flex;
+   display: flex;
    gap: 24px;
    flex-direction: row;
-   list-style:none;
+   list-style: none;
    margin: 0;
    padding: 0;
 }
@@ -70,41 +80,44 @@ img { max-width: 100%; display: block; } /* pictures never overflow their box */
 /* STEP 5 · .hero
    At least 70vh tall, a background colour, white text.
    Text centered, and the content centered up and down. */
-   .hero {
-      display: flex;
-      min-height: 70vh;
-      color: white;
-      background-color: crimson;
-      text-align: center;
-      align-content: center;
-   }
+.hero {
+   display: flex;
+   min-height: 70vh;
+   color: white;
+   background-color: crimson;
+   text-align: center;
+   align-content: center;
+}
 
 /* STEP 6 · .btn and .hero-buttons
    .btn: inline-block, padding 12px 28px, rounded corners, no underline, bold.
    Give .btn-primary and .btn-secondary different looks.
    .hero-buttons: the two buttons side by side, centered, 16px apart. */
-   .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      border: 2px solid transparent;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-   }
-   .btn-primary {
-      background-color: orange;
-      color: black
-   }
-   .btn-secondary {
-      border-color: white;
-      color: white;
-   }
-   .hero-buttons{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-   }
+.btn {
+   display: inline-block;
+   padding: 12px 28px;
+   border: 2px solid transparent;
+   border-radius: 8px;
+   text-decoration: none;
+   font-weight: 700;
+}
+
+.btn-primary {
+   background-color: orange;
+   color: black
+}
+
+.btn-secondary {
+   border-color: white;
+   color: white;
+}
+
+.hero-buttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
+}
 
 /* Done early? Try other colours from the reference sheet (Colors tab).
    On day 2 we turn your colours into variables. */
