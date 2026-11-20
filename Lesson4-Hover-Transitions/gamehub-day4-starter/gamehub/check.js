@@ -7,7 +7,7 @@
   var TOTAL = 6, KEY = "gh4-tried";
   var tried = {};
   try { tried = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { tried = {}; }
-  function save() { try { localStorage.setItem(KEY, JSON.stringify(tried)); } catch (e) {} }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(tried)); } catch (e) { } }
   function $(s) { return document.querySelector(s); }
   function cs(el) { return getComputedStyle(el); }
   function lift(el) {                       /* how far up a transform moves it, in px */
