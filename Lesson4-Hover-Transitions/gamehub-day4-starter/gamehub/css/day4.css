@@ -38,9 +38,7 @@
    .card: transition transform and box-shadow, 0.2s.
    .card:hover: translateY(-6px) and a bigger, softer box-shadow. */
 .card {
-   transition: 0.2s;
-   transform: 0.2s;
-   box-shadow: 0.2s;
+   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
